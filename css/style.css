@@ -19,7 +19,7 @@ header {
 	background-color: #484848;
 	}
 
-header:after {
+/*header:after {
 	content: '';
 	clear: both;
 	display: table;
@@ -31,32 +31,81 @@ header h2 {
 	color: #fff;
 	padding: 13px 20px;
 	float: left;
+}*/
+
+header h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+	line-height: 50px;
+	position: relative;
+	/*background-image: url(../img/icon1.gif), url(../img/icon2.gif);
+	background-position: left center, right center;
+	background-repeat: no-repeat;*/
+	/*background: url(../img/icon1.gif) left center no-repeat, 
+				url(../img/icon2.gif) right center no-repeat;*/
+	padding-left: 70px;
+		}
+
+header h2:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/icon1.gif) left center no-repeat;
+	}
+
+header h2:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	width: 37px;
+	height: 50px;
+	background: url(../img/icon2.gif) right center no-repeat;
+	}
+
+a {
+	color: #404040;
+	font-size: 13px;
+	text-decoration: none;
 }
 
-p {
-	margin: 10px 0;
+a:hover {
+	text-decoration: underline;
 }
 
-.icon1 {
+/*.icon1 {
 	float: left;
 }
 
 .icon2 {
 	float: right;
+}*/
+
+.tags {
+	margin-top: 15px;
+	font-size: 0;
+	text-align: justify;
+	margin-right: -5px;
 }
 
-.tags *{
+.tags li {
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
 	display: inline-block;
-	text-decoration: none;
-	color: #484848;
-	border: 1px solid #cccccc;
-	border-radius: 2px;
-	margin: 3px;
-	padding: 2px;
-	font-size: 14px;
+	border-radius: 3px;
+	margin: 0 5px 5px 0;
 }
 
-.footer {
-	font-size: 20px;
-	color: #484848;
+.tags li a {
+	display: inline-block;
+	padding: 5px;
+	}
+
+footer {
+	margin-top: 15px;
 }
